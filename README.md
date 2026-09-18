@@ -1,17 +1,52 @@
-# tugas_mobile_dev
+# Tugas Mobile Development - Flutter
 
-A new Flutter project.
+Aplikasi katalog produk sederhana yang dibuat menggunakan Flutter untuk memenuhi tugas Mobile Development.
 
-## Getting Started
+## Deskripsi
 
-This project is a starting point for a Flutter application.
+Aplikasi ini merupakan katalog produk sederhana yang terdiri dari dua halaman utama:
 
-A few resources to get you started if this is your first Flutter project:
+1. **Beranda / Katalog Produk**
+   - Menampilkan daftar 3 produk.
+   - Setiap produk ditampilkan dalam bentuk Card dan ListTile.
+   - Pengguna dapat memilih produk untuk melihat detail.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+2. **Detail Produk**
+   - Menampilkan nama produk, harga, dan deskripsi.
+   - Menggunakan StatefulWidget.
+   - Memiliki fitur interaktif berupa tombol Tambah ke Favorit.
+   - Status tombol berubah ketika pengguna menekannya.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Fitur
+
+- Menampilkan katalog 3 produk.
+- Navigasi dari halaman katalog ke halaman detail.
+- Navigasi menggunakan `Navigator.push`.
+- Tombol kembali pada AppBar untuk kembali ke halaman katalog.
+- Detail produk menggunakan `Column`.
+- Deskripsi produk ditampilkan menggunakan `Container`.
+- Fitur tambah/hapus favorit menggunakan `setState`.
+
+## Produk
+
+| Produk | Harga |
+|---|---:|
+| Pink Hoodie | Rp150.000 |
+| White Sneakers | Rp350.000 |
+| Cream T-Shirt | Rp120.000 |
+
+## Struktur Project
+
+```text
+tugas_mobile_dev/
+├── android/
+├── ios/
+├── lib/
+│   ├── main.dart
+│   ├── home_screen.dart
+│   └── detail_screen.dart
+├── test/
+├── web/
+├── windows/
+├── pubspec.yaml
+└── README.md
